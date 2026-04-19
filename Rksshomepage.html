@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RKSS Consulting Services - Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <!-- <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark:        #100a2e;
+      --darker:      #0a0620;
+      --purple:      #2d1b69;
+      --purple-mid:  #3d1f8a;
+      --violet:      #6d28d9;
+      --gold:        #c9a227;
+      --gold-light:  #f0b429;
+      --white:       #ffffff;
+      --text-gray:   #555;
+      --text-muted:  rgba(255,255,255,.65);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; color: #1e1e2e; background: #fff; overflow-x: hidden; }
+
+    /* ══════════════════════════════
+       NAV
+    ══════════════════════════════ */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 60px; height: 64px;
+      background: var(--dark);
+      position: sticky; top: 0; z-index: 200;
+      border-bottom: 1px solid rgba(201,162,39,.25);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-badge {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 2px solid var(--gold); background: var(--darker);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 0.52rem; font-weight: 800; line-height: 1.25; text-align: center;
+    }
+    .logo-name { color: #fff; font-size: 1.15rem; font-weight: 700; letter-spacing: 1px; }
+    .nav-links { display: flex; gap: 38px; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: rgba(255,255,255,.8);
+      font-size: 0.85rem; font-weight: 500; letter-spacing: .3px;
+      transition: color .2s;
+    }
+    .nav-links a.active { color: var(--gold-light); }
+    .nav-links a:hover { color: var(--gold-light); }
+    .btn-nav {
+      background: var(--gold-light); color: var(--dark); border: none;
+      padding: 10px 24px; border-radius: 6px; font-weight: 700;
+      font-size: 0.85rem; cursor: pointer; letter-spacing: .4px;
+      transition: background .2s;
+    }
+    .btn-nav:hover { background: var(--gold); }
+
+    /* ══════════════════════════════
+       HERO
+    ══════════════════════════════ */
+    .hero {
+      background: var(--dark);
+      min-height: 520px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 80px 60px;
+      position: relative; overflow: hidden;
+    }
+    /* subtle radial glow */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(109,40,217,.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: 3.4rem; font-weight: 800; color: #fff;
+      line-height: 1.18; margin-bottom: 22px; position: relative; z-index: 1;
+      max-width: 700px;
+    }
+    .hero h1 span { color: var(--gold-light); }
+    .hero p {
+      font-size: 1rem; color: rgba(255,255,255,.75); line-height: 1.65;
+      max-width: 520px; margin-bottom: 40px; position: relative; z-index: 1;
+    }
+    .btn-hero {
+      background: var(--gold-light); color: var(--dark); border: none;
+      padding: 16px 48px; border-radius: 50px; font-weight: 700;
+      font-size: 1rem; cursor: pointer; position: relative; z-index: 1;
+      transition: transform .2s, background .2s;
+    }
+    .btn-hero:hover { background: var(--gold); transform: translateY(-2px); }
+
+    /* ══════════════════════════════
+       TAGLINE BAND
+    ══════════════════════════════ */
+    .tagline-band {
+      padding: 70px 60px; text-align: center; background: #fff;
+    }
+    .tagline-band h2 {
+      font-size: 2.5rem; font-weight: 800; color: var(--dark); line-height: 1.25;
+      max-width: 800px; margin: 0 auto;
+    }
+
+    /* ══════════════════════════════
+       WHO WE ARE
+    ══════════════════════════════ */
+    .who-section {
+      background: #f5f3fb;
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 420px;
+    }
+    .who-img {
+      position: relative; overflow: hidden; min-height: 380px;
+    }
+    /* office scene illustration */
+    .office-scene {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #b8cce8 0%, #8da9cc 40%, #6687ab 100%);
+      position: relative;
+    }
+    /* window cityscape */
+    .win-sky {
+      position: absolute; top: 0; left: 0; right: 0; height: 55%;
+      background: linear-gradient(180deg, #c8d8ee 0%, #a0b8d4 100%);
+    }
+    .city-building {
+      position: absolute; bottom: 0; background: rgba(80,100,130,.55);
+      border-radius: 2px 2px 0 0;
+    }
+    .desk {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 42%;
+      background: #6b4226;
+    }
+    .desk-surface {
+      position: absolute; top: 0; left: 0; right: 0; height: 12px;
+      background: #7d4e2d;
+    }
+    /* books on desk */
+    .book { position: absolute; border-radius: 2px; }
+    .notebook {
+      width: 120px; height: 160px; background: #1e3a5f;
+      border-radius: 3px; bottom: 40px; left: 30px;
+      transform: rotate(-5deg);
+      border-left: 5px solid var(--gold);
+    }
+    .notebook2 {
+      width: 100px; height: 135px; background: #2d6a8a;
+      border-radius: 3px; bottom: 40px; left: 50px;
+      transform: rotate(2deg);
+    }
+    .trophy { position: absolute; bottom: 45px; right: 60px; }
+    .trophy-body { width: 28px; height: 40px; background: var(--gold); border-radius: 40% 40% 0 0; }
+    .trophy-base { width: 40px; height: 8px; background: var(--gold-light); border-radius: 2px; margin-left: -6px; }
+    .pen {
+      position: absolute; bottom: 42px; left: 100px;
+      width: 4px; height: 80px; background: #222; border-radius: 2px;
+      transform: rotate(20deg); transform-origin: bottom;
+    }
+    .globe-obj {
+      position: absolute; bottom: 80px; right: 100px;
+      width: 36px; height: 36px; background: rgba(200,220,255,.5);
+      border-radius: 50%; border: 2px solid rgba(255,255,255,.6);
+    }
+
+    .who-content {
+      padding: 50px 52px; display: flex; flex-direction: column; justify-content: center;
+    }
+    .pill-who {
+      display: inline-flex; align-items: center;
+      border: 1.5px solid var(--gold); border-radius: 30px;
+      padding: 6px 22px; font-size: 0.75rem; font-weight: 600;
+      color: var(--gold); margin-bottom: 22px; width: fit-content;
+      background: rgba(201,162,39,.06);
+    }
+    .who-content p { font-size: 0.88rem; color: #444; line-height: 1.7; margin-bottom: 12px; }
+    .who-content p strong { color: var(--dark); }
+    .who-badges { display: flex; gap: 12px; margin: 22px 0 28px; flex-wrap: wrap; }
+    .badge-item {
+      display: flex; align-items: center; gap: 10px;
+      background: #fff; border: 1px solid #e0d8f5;
+      border-radius: 10px; padding: 10px 16px; flex: 1; min-width: 120px;
+    }
+    .badge-icon { font-size: 1.3rem; }
+    .badge-label { font-size: 0.78rem; font-weight: 700; color: var(--dark); display: block; }
+    .badge-sub { font-size: 0.68rem; color: var(--text-gray); }
+    .btn-learn {
+      background: var(--dark); color: #fff; border: none;
+      padding: 13px 30px; border-radius: 6px; font-weight: 600;
+      font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center;
+      gap: 10px; width: fit-content; transition: background .2s;
+    }
+    .btn-learn:hover { background: var(--purple-mid); }
+    .btn-learn::after { content: '→'; font-size: 1rem; }
+
+    /* ══════════════════════════════
+       SERVICES
+    ══════════════════════════════ */
+    .services-section {
+      background: var(--dark); padding: 60px 60px;
+    }
+    .services-section h2 {
+      font-size: 1.6rem; font-weight: 700; color: #fff;
+      margin-bottom: 36px; max-width: 600px;
+    }
+    .service-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .svc-card {
+      border-radius: 12px; overflow: hidden; position: relative;
+      min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end;
+      cursor: pointer;
+    }
+    /* gradient image placeholders */
+    .svc-img {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .svc-img.design-bg {
+      background: linear-gradient(135deg, #ff6b35 0%, #f7c948 30%, #4ecdc4 60%, #a855f7 100%);
+    }
+    .svc-img.dev-bg {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+    .svc-img.dm-bg {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    }
+    .svc-img-icon { font-size: 3.5rem; opacity: .8; }
+    .svc-overlay {
+      position: relative; z-index: 2;
+      background: linear-gradient(to top, rgba(10,6,32,.95) 0%, rgba(10,6,32,.5) 60%, transparent 100%);
+      padding: 22px 20px;
+    }
+    .svc-overlay h3 { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .svc-overlay p { font-size: 0.78rem; color: rgba(255,255,255,.7); line-height: 1.5; margin-bottom: 14px; }
+    .svc-arrow {
+      width: 34px; height: 34px; background: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem; color: var(--dark); cursor: pointer;
+      transition: background .2s;
+    }
+    .svc-arrow:hover { background: var(--gold-light); }
+
+    /* ══════════════════════════════
+       WHY CHOOSE RKSS
+    ══════════════════════════════ */
+    .why-section {
+      background: var(--dark); padding: 70px 60px;
+      text-align: center;
+    }
+    .why-section h2 {
+      font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 10px; letter-spacing: 1px;
+    }
+    .why-section > p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 52px; }
+
+    /* hub layout */
+    .why-hub {
+      display: grid;
+      grid-template-columns: 1fr 280px 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 16px;
+      align-items: center;
+      max-width: 900px; margin: 0 auto;
+    }
+    .why-card {
+      background: #fff; border-radius: 12px; padding: 20px 20px;
+      text-align: left;
+    }
+    .why-card .wc-icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+    .why-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .why-card p { font-size: 0.76rem; color: var(--text-gray); line-height: 1.5; }
+
+    /* center orb */
+    .why-orb {
+      grid-column: 2; grid-row: 1 / 4;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .orb-circle {
+      width: 180px; height: 180px; border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #9b59f5, #3d1f8a, #100a2e);
+      border: 3px solid rgba(201,162,39,.4);
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .orb-inner {
+      width: 110px; height: 110px; border-radius: 50%;
+      background: linear-gradient(135deg, #6d28d9, #2d1b69);
+      border: 2px solid rgba(201,162,39,.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem;
+    }
+
+    /* top center */
+    .why-top { grid-column: 2; grid-row: 1; display:none; }
+    /* positioned cards */
+    .wc-tl { grid-column: 1; grid-row: 1; }
+    .wc-bl { grid-column: 1; grid-row: 3; }
+    .wc-tr { grid-column: 3; grid-row: 1; }
+    .wc-br { grid-column: 3; grid-row: 3; }
+    .wc-tc { grid-column: 2; grid-row: 1; display: block; }
+    .wc-bc { grid-column: 2; grid-row: 3; display: block; }
+
+    /* ══════════════════════════════
+       WHO WE WORK WITH
+    ══════════════════════════════ */
+    .work-with {
+      background: var(--dark); padding: 60px 60px;
+      text-align: center;
+    }
+    .work-with .pill-outline {
+      display: inline-block; border: 1px solid var(--gold);
+      border-radius: 30px; padding: 5px 20px;
+      font-size: 0.72rem; color: var(--gold); margin-bottom: 16px;
+    }
+    .work-with h2 { font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+    .work-with > p { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 40px; }
+
+    .audience-grid-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px; }
+    .audience-grid-bot { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 560px; margin: 0 auto; }
+
+    .audience-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 14px; padding: 28px 20px; text-align: center;
+    }
+    .audience-card .ac-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+    .audience-card h4 { font-size: 0.9rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .audience-card p { font-size: 0.76rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* serving band */
+    .serving-band {
+      background: var(--dark); padding: 20px 60px 40px;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+    }
+    .serving-band::before, .serving-band::after {
+      content: ''; flex: 1; height: 1px; background: rgba(255,255,255,.15);
+    }
+    .serving-band p { font-size: 0.82rem; color: var(--text-muted); white-space: nowrap; }
+    .serving-band p span { color: var(--gold-light); font-weight: 600; }
+    .globe-emoji { font-size: 1.2rem; display: block; text-align: center; margin-bottom: 4px; }
+
+    /* ══════════════════════════════
+       LONG RUN CTA
+    ══════════════════════════════ */
+    .longrun {
+      background: #fff; padding: 80px 60px 0;
+      display: grid; grid-template-columns: 1fr 400px; gap: 60px;
+      align-items: center; max-width: 1100px; margin: 0 auto;
+    }
+    .longrun-left { text-align: left; }
+    .longrun-left h2 {
+      font-size: 2.4rem; font-weight: 800; color: var(--dark);
+      line-height: 1.2; margin-bottom: 18px;
+    }
+    .longrun-left h2 span { color: var(--gold-light); }
+    .longrun-left p { font-size: 0.88rem; color: var(--text-gray); line-height: 1.65; margin-bottom: 30px; max-width: 420px; }
+    .btn-contact {
+      background: var(--gold-light); color: var(--dark); border: none;
+      padding: 14px 40px; border-radius: 50px; font-weight: 700;
+      font-size: 0.95rem; cursor: pointer; transition: background .2s;
+    }
+    .btn-contact:hover { background: var(--gold); }
+
+    .subscribe-box {
+      background: var(--purple-mid); border-radius: 16px;
+      padding: 32px 28px; box-shadow: 0 8px 30px rgba(61,31,138,.4);
+    }
+    .subscribe-box h4 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 20px; text-align: center; }
+    .sub-row { display: flex; background: #fff; border-radius: 8px; overflow: hidden; }
+    .sub-input {
+      flex: 1; border: none; outline: none; padding: 13px 16px;
+      font-size: 0.85rem; color: var(--dark); font-family: 'Poppins', sans-serif;
+      background: #fff;
+    }
+    .sub-btn {
+      background: #fff; color: var(--dark); border: none;
+      padding: 13px 20px; font-weight: 700; font-size: 0.85rem;
+      cursor: pointer; border-left: 1px solid #eee;
+    }
+
+    /* ══════════════════════════════
+       FOOTER
+    ══════════════════════════════ */
+    footer {
+      background: var(--darker); padding: 56px 60px 0;
+      margin-top: 60px;
+    }
+    .footer-top {
+      display: flex; align-items: center; gap: 16px; margin-bottom: 44px;
+    }
+    .footer-logo { display: flex; align-items: center; gap: 10px; }
+    .footer-brand h4 { color: #fff; font-size: 1rem; font-weight: 700; letter-spacing: .5px; }
+    .footer-brand p { font-size: 0.8rem; color: rgba(255,255,255,.5); margin-top: 3px; }
+
+    .footer-grid {
+      display: grid; grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px; padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .footer-col h5 {
+      color: rgba(255,255,255,.35); font-size: 0.68rem;
+      letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .footer-col a, .footer-col p {
+      display: block; font-size: 0.82rem; color: rgba(255,255,255,.65);
+      text-decoration: none; margin-bottom: 8px; line-height: 1.5;
+    }
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom {
+      padding: 22px 0; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+    }
+    .social-row { display: flex; align-items: center; gap: 12px; }
+    .social-row span { font-size: 0.82rem; color: rgba(255,255,255,.5); }
+    .sicon {
+      width: 32px; height: 32px; border-radius: 6px;
+      background: rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; color: #fff; cursor: pointer;
+      transition: background .2s;
+    }
+    .sicon:hover { background: var(--gold); color: var(--dark); }
+    .sicon.ig { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+    .sicon.x { background: #000; }
+    .sicon.li { background: #0077b5; }
+    .footer-copy { font-size: 0.76rem; color: rgba(255,255,255,.3); }
+
+    /* ══════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════ */
+    @media (max-width: 900px) {
+      nav { padding: 0 20px; }
+      .hero { padding: 60px 20px; }
+      .hero h1 { font-size: 2.2rem; }
+      .tagline-band { padding: 50px 20px; }
+      .tagline-band h2 { font-size: 1.7rem; }
+      .who-section { grid-template-columns: 1fr; }
+      .who-img { display: none; }
+      .who-content { padding: 36px 20px; }
+      .services-section, .why-section, .work-with { padding: 50px 20px; }
+      .service-cards { grid-template-columns: 1fr; }
+      .why-hub { grid-template-columns: 1fr; }
+      .why-orb { display: none; }
+      .wc-tl,.wc-bl,.wc-tr,.wc-br,.wc-tc,.wc-bc { grid-column: 1; grid-row: auto; }
+      .audience-grid-top { grid-template-columns: 1fr 1fr; }
+      .audience-grid-bot { grid-template-columns: 1fr; }
+      .longrun { grid-template-columns: 1fr; padding: 50px 20px 0; }
+      footer { padding: 40px 20px 0; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style> -->
+  </head>
+  <body>
+    <!-- ═══ NAV ═══ -->
+    <nav>
+      <a href="#" class="logo">
+        <div class="logo-badge">RS<br />RKSS</div>
+        <span class="logo-name">RKSS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="Rksshomepage.html" class="active">HOME</a></li>
+        <li><a href="Rkssabout.html">ABOUT US</a></li>
+        <li><a href="Rkssservice.html">SERVICES</a></li>
+        <li><a href="Rksscontact.html">CONTACT US</a></li>
+      </ul>
+      <button class="btn-nav">GET STARTED</button>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <h1>Smart Strategies for<br />Smarter <span>Businesses.</span></h1>
+      <p>
+        Helping Businesses innovate, Grow, and Succeed with Modern Technology
+        Solutions.
+      </p>
+      <button class="btn-hero">Explore Services</button>
+    </section>
+
+    <!-- ═══ TAGLINE ═══ -->
+    <section class="tagline-band">
+      <h2>"Turning Today's Decisions into Tomorrow's Success."</h2>
+    </section>
+
+    <!-- ═══ WHO WE ARE ═══ -->
+    <section class="who-section">
+      <div class="who-img">
+        <div class="office-scene">
+          <div class="win-sky"></div>
+          <!-- city buildings -->
+          <div
+            class="city-building"
+            style="width: 45px; height: 120px; right: 120px; bottom: 42%"
+          ></div>
+          <div
+            class="city-building"
+            style="width: 35px; height: 90px; right: 80px; bottom: 42%"
+          ></div>
+          <div
+            class="city-building"
+            style="width: 55px; height: 145px; right: 160px; bottom: 42%"
+          ></div>
+          <div
+            class="city-building"
+            style="
+              width: 40px;
+              height: 100px;
+              right: 200px;
+              bottom: 42%;
+              opacity: 0.6;
+            "
+          ></div>
+          <div class="desk">
+            <div class="desk-surface"></div>
+            <div class="notebook"></div>
+            <div class="notebook2"></div>
+            <div class="pen"></div>
+            <div class="globe-obj"></div>
+            <div class="trophy">
+              <div class="trophy-body"></div>
+              <div class="trophy-base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="who-content">
+        <span class="pill-who">WHO WE ARE</span>
+        <p>
+          <strong>RKSS Consulting Services</strong> is a trusted consulting firm
+          dedicated to providing professional guidance,
+          <strong>strategic solutions</strong>, and
+          <strong>practical support</strong> to help clients succeed in a
+          competitive world.
+        </p>
+        <p>
+          In RKSS, innovation is not just a buzzword — it's the foundation of
+          everything we do.
+        </p>
+        <div class="who-badges">
+          <div class="badge-item">
+            <span class="badge-icon">🛡</span>
+            <div>
+              <span class="badge-label">Trusted</span>
+              <span class="badge-sub">Client Focused</span>
+            </div>
+          </div>
+          <div class="badge-item">
+            <span class="badge-icon">💡</span>
+            <div>
+              <span class="badge-label">Innovative</span>
+              <span class="badge-sub">Result Driven</span>
+            </div>
+          </div>
+          <div class="badge-item">
+            <span class="badge-icon">🎯</span>
+            <div>
+              <span class="badge-label">Strategic</span>
+              <span class="badge-sub">Growth Partner</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn-learn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ -->
+    <section class="services-section">
+      <h2>Our Services that helps you in build your business.</h2>
+      <div class="service-cards">
+        <div class="svc-card">
+          <div class="svc-img design-bg">
+            <span class="svc-img-icon">🎨</span>
+          </div>
+          <div class="svc-overlay">
+            <h3>Designing</h3>
+            <p>
+              We create modern-user focused designs that brings your ideas to
+              life.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-img dev-bg">
+            <span class="svc-img-icon">💻</span>
+          </div>
+          <div class="svc-overlay">
+            <h3>Development</h3>
+            <p>We build fast, secure and scalable websites and apps.</p>
+            <div class="svc-arrow">→</div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-img dm-bg">
+            <span class="svc-img-icon">📱</span>
+          </div>
+          <div class="svc-overlay">
+            <h3>Digital Marketing</h3>
+            <p>
+              We help you reach the right audience, improve and grow online.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY CHOOSE RKSS ═══ -->
+    <section class="why-section">
+      <h2>WHY CHOOSE RKSS</h2>
+      <p>Fighting Fraud at Scale with the least possible Friction.</p>
+
+      <div class="why-hub">
+        <!-- top center -->
+        <div class="why-card wc-tc">
+          <span class="wc-icon">🚀</span>
+          <h4>Result-Driven Approach</h4>
+          <p>
+            We focus on strategies that deliver measurable growth and real
+            business outcomes consistently.
+          </p>
+        </div>
+
+        <!-- left col -->
+        <div class="why-card wc-tl">
+          <span class="wc-icon">⏱</span>
+          <h4>Fast &amp; Reliable Delivery</h4>
+          <p>
+            We deliver high-quality solutions on time while maintaining
+            performance, quality, and consistency.
+          </p>
+        </div>
+
+        <!-- center orb -->
+        <div class="why-orb">
+          <div class="orb-circle">
+            <div class="orb-inner">🌐</div>
+          </div>
+        </div>
+
+        <!-- right col -->
+        <div class="why-card wc-tr">
+          <span class="wc-icon">🤝</span>
+          <h4>Long-Term Support</h4>
+          <p>
+            We don't just deliver — we support and grow with your business at
+            every stage.
+          </p>
+        </div>
+
+        <div class="why-card wc-bl">
+          <span class="wc-icon">🎯</span>
+          <h4>Tailored Solutions</h4>
+          <p>
+            Every project is customized to your goals — no one-size-fits-all
+            approach ever used.
+          </p>
+        </div>
+
+        <!-- bottom center -->
+        <div class="why-card wc-bc">
+          <span class="wc-icon">🔄</span>
+          <h4>End-to-End Services</h4>
+          <p>
+            From design to development to marketing — complete digital solutions
+            under one roof.
+          </p>
+        </div>
+
+        <div class="why-card wc-br">
+          <span class="wc-icon">👥</span>
+          <h4>Expert Team</h4>
+          <p>
+            A skilled team of designers, developers, and marketers with strong
+            industry experience and collaboration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHO WE WORK WITH ═══ -->
+    <section class="work-with">
+      <span class="pill-outline">WHO WE WORK WITH</span>
+      <h2>Who We Work With</h2>
+      <p>We help businesses at every stage grow smarter and achieve more.</p>
+
+      <div class="audience-grid-top">
+        <div class="audience-card">
+          <span class="ac-icon">🚀</span>
+          <h4>Startups</h4>
+          <p>We help you launch, scale and build a strong digital presence.</p>
+        </div>
+        <div class="audience-card">
+          <span class="ac-icon">🏪</span>
+          <h4>Small &amp; Medium Businesses</h4>
+          <p>Grow your business with smart and scalable solutions.</p>
+        </div>
+        <div class="audience-card">
+          <span class="ac-icon">🏢</span>
+          <h4>Corporates</h4>
+          <p>Enterprise-level solutions for performance and growth.</p>
+        </div>
+      </div>
+      <div class="audience-grid-bot">
+        <div class="audience-card">
+          <span class="ac-icon">🎓</span>
+          <h4>Students and Professionals</h4>
+          <p>Build your portfolio and personal brand effectively.</p>
+        </div>
+        <div class="audience-card">
+          <span class="ac-icon">💡</span>
+          <h4>Entrepreneurs</h4>
+          <p>Turn your ideas into successful digital products.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- serving band -->
+    <div class="serving-band">
+      <span class="globe-emoji">🌐</span>
+      <p>Serving clients across <span>multiple industries worldwide</span></p>
+    </div>
+
+    <!-- ═══ LONG RUN CTA ═══ -->
+    <div style="background: #fff; padding-bottom: 0">
+      <div class="longrun">
+        <div class="longrun-left">
+          <h2>With you for the <span>long run</span></h2>
+          <p>
+            Whether you are a client, partner, investor, or employee, our
+            promise is to be with you for the long run. Let's take the first
+            step together.
+          </p>
+          <button class="btn-contact">Contact us</button>
+        </div>
+        <div class="subscribe-box">
+          <h4>For Stay Updated</h4>
+          <div class="sub-row">
+            <input
+              class="sub-input"
+              type="email"
+              placeholder="Enter your mail"
+            />
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div class="logo-badge">RS<br />RKSS</div>
+        </div>
+        <div class="footer-brand">
+          <h4>RKSS CONSULTING SERVICES</h4>
+          <p>Turning Today's Decisions into Tomorrow's Success</p>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <p>📞 Phone: +91 74040 58832</p>
+          <p>✉ Email: info@rkss.com</p>
+          <p>📍 Location: New Delhi</p>
+        </div>
+        <div class="footer-col">
+          <h5>&nbsp;</h5>
+          <a href="#">Privacy Statements</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+        <div class="footer-col">
+          <h5>&nbsp;</h5>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Careers</a>
+          <a href="#">Quick Links</a>
+          <a href="#">Help and Support</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-row">
+          <span>Follow us</span>
+          <span class="sicon ig">📷</span>
+          <span class="sicon x">✕</span>
+          <span class="sicon li">in</span>
+        </div>
+        <p class="footer-copy">
+          @2026 RKSS Consulting Services. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

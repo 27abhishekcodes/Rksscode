@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RKSS Consulting Services – Contact Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <!-- <style>
+      /* ─── CSS Variables ─── */
+      :root {
+        --dark: #0d0b12;
+        --dark2: #1a1526;
+        --purple: #2b1f42;
+        --gold: #f0a500;
+        --gold-light: #f5be40;
+        --white: #ffffff;
+        --off-white: #f4f4f8;
+        --text-muted: #9b8faf;
+        --border: rgba(255, 255, 255, 0.08);
+        --radius: 12px;
+        --shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: var(--off-white);
+        color: #1a1526;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* ─── NAVBAR ─── */
+      nav {
+        background: var(--dark);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 48px;
+        height: 68px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo-badge {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 2px solid var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 13px;
+        color: var(--gold);
+        letter-spacing: 1px;
+        flex-shrink: 0;
+      }
+
+      .logo-name {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        color: var(--white);
+        letter-spacing: 2px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 36px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #ccc;
+        text-transform: uppercase;
+        transition: color 0.2s;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: var(--gold);
+      }
+
+      .btn-get-started {
+        background: transparent;
+        border: 2px solid var(--gold);
+        color: var(--gold);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 10px 22px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+
+      .btn-get-started:hover {
+        background: var(--gold);
+        color: var(--dark);
+      }
+
+      /* ─── HERO BANNER ─── */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #0d0b12 0%,
+          #1a0e2e 50%,
+          #2b1244 100%
+        );
+        padding: 60px 48px 50px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 70% 50%,
+          rgba(240, 165, 0, 0.08) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .hero-content {
+        flex: 1;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(240, 165, 0, 0.5);
+        border-radius: 20px;
+        padding: 6px 16px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 22px;
+      }
+
+      .hero-tag::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold);
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        color: var(--white);
+        line-height: 1.15;
+        margin-bottom: 18px;
+      }
+
+      .hero p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.7;
+        max-width: 380px;
+        margin-bottom: 36px;
+      }
+
+      .hero-features {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .hero-feature {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .hero-feature-icon {
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+
+      .hero-feature-text strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 3px;
+      }
+
+      .hero-feature-text span {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.45);
+      }
+
+      /* Hero illustration */
+      .hero-visual {
+        flex-shrink: 0;
+        position: relative;
+        z-index: 2;
+      }
+
+      .envelope-wrap {
+        width: 200px;
+        height: 180px;
+        position: relative;
+      }
+
+      .envelope {
+        width: 180px;
+        height: 140px;
+        background: linear-gradient(145deg, #f0a500, #c77d00);
+        border-radius: 12px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        box-shadow: 0 20px 60px rgba(240, 165, 0, 0.35);
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .chat-bubble {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: var(--purple);
+        border: 1px solid rgba(240, 165, 0, 0.3);
+        border-radius: 12px;
+        padding: 10px 14px;
+        display: flex;
+        gap: 5px;
+      }
+
+      .chat-bubble span {
+        width: 8px;
+        height: 8px;
+        background: var(--gold);
+        border-radius: 50%;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      .chat-bubble span:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .chat-bubble span:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.4;
+          transform: scale(0.8);
+        }
+      }
+
+      /* ─── MAIN SECTION ─── */
+      .main-section {
+        padding: 80px 48px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 42px;
+        color: var(--dark);
+      }
+
+      .section-title h2 span {
+        color: var(--gold);
+      }
+
+      .section-title p {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      /* ─── CONTACT GRID ─── */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 36px;
+        align-items: start;
+      }
+
+      /* ─── FORM CARD ─── */
+      .form-card {
+        background: var(--white);
+        border-radius: 20px;
+        padding: 44px 40px;
+        box-shadow: var(--shadow);
+      }
+
+      .form-group {
+        margin-bottom: 22px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: var(--dark);
+        margin-bottom: 8px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        border: 1.5px solid #e0dce8;
+        border-radius: var(--radius);
+        padding: 13px 16px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        color: var(--dark);
+        background: #fafafa;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: #bbb;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: var(--gold);
+        background: #fff;
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      /* Phone row */
+      .phone-row {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 10px;
+      }
+
+      /* Services checkboxes */
+      .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 20px;
+        margin-top: 8px;
+      }
+
+      .service-check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #444;
+      }
+
+      .service-check input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        position: relative;
+        flex-shrink: 0;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+      }
+
+      .service-check input[type="checkbox"]:checked {
+        background: var(--gold);
+        border-color: var(--gold);
+      }
+
+      .service-check input[type="checkbox"]:checked::after {
+        content: "✓";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        color: white;
+      }
+
+      /* Send button */
+      .btn-send {
+        width: 100%;
+        background: var(--gold);
+        color: var(--dark);
+        border: none;
+        border-radius: var(--radius);
+        padding: 16px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+      }
+
+      .btn-send:hover {
+        background: var(--gold-light);
+        transform: translateY(-2px);
+      }
+
+      .btn-send svg {
+        width: 18px;
+        height: 18px;
+        fill: none;
+        stroke: var(--dark);
+        stroke-width: 2.5;
+      }
+
+      /* ─── SIDE CARDS ─── */
+      .side-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .side-card {
+        background: var(--purple);
+        border-radius: 18px;
+        padding: 26px 24px;
+        color: var(--white);
+      }
+
+      .side-card-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+
+      .side-card-icon {
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+
+      .side-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        color: var(--white);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .side-card > p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.65);
+        margin-bottom: 14px;
+      }
+
+      .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .social-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.8);
+        transition: color 0.2s;
+      }
+
+      .social-link:hover {
+        color: var(--gold);
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+
+      .icon-email {
+        background: rgba(220, 80, 100, 0.25);
+      }
+      .icon-linkedin {
+        background: rgba(0, 119, 181, 0.3);
+      }
+      .icon-instagram {
+        background: rgba(193, 53, 132, 0.25);
+      }
+      .icon-x {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      /* Call card */
+      .call-card {
+        background: var(--dark2);
+        border: 1px solid rgba(240, 165, 0, 0.2);
+      }
+
+      .call-card .side-card-icon {
+        background: rgba(240, 165, 0, 0.15);
+      }
+
+      .call-number {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        color: var(--gold);
+        letter-spacing: 1px;
+      }
+
+      /* ─── FOOTER ─── */
+      footer {
+        background: var(--dark);
+        color: var(--white);
+        padding: 60px 48px 30px;
+      }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: 280px 1fr 1fr;
+        gap: 48px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 30px;
+      }
+
+      .footer-brand .logo {
+        margin-bottom: 14px;
+      }
+
+      .footer-brand p {
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      .footer-col h4 {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 18px;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      .footer-col ul li a:hover {
+        color: var(--gold);
+      }
+
+      .footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      .footer-contact-item .ic {
+        font-size: 15px;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+
+      .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 12px;
+      }
+
+      .footer-social-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .footer-social-btn:hover {
+        background: var(--gold);
+      }
+
+      .footer-copy {
+        font-size: 12px;
+        color: var(--text-muted);
+        text-align: center;
+        flex: 1;
+      }
+
+      /* ─── RESPONSIVE ─── */
+      @media (max-width: 900px) {
+        nav {
+          padding: 0 20px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .hero {
+          padding: 40px 20px;
+          flex-direction: column;
+        }
+        .main-section {
+          padding: 50px 20px;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        footer {
+          padding: 40px 20px 20px;
+        }
+      }
+    </style> -->
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav>
+      <div class="logo">
+        <div class="logo-badge">RS</div>
+        <span class="logo-name">RKSS</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="Rksshomepage.html">Home</a></li>
+        <li><a href="Rkssabout.html">About Us</a></li>
+        <li><a href="Rkssservice.html">Services</a></li>
+        <li><a href="Rksscontact.html" class="active">Contact Us</a></li>
+      </ul>
+
+      <button class="btn-get-started">Get Started</button>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-tag">We're here to help</div>
+        <h1>Let's Connect</h1>
+        <p>
+          Get expert help for your website, app or marketing strategy – our team
+          is ready 24/7 and will get back to you as soon as possible.
+        </p>
+
+        <div class="hero-features">
+          <div class="hero-feature">
+            <div class="hero-feature-icon">💬</div>
+            <div class="hero-feature-text">
+              <strong>Free Project Discussion</strong>
+              <span>Share your ideas with us</span>
+            </div>
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">📋</div>
+            <div class="hero-feature-text">
+              <strong>Strategy Session</strong>
+              <span>Plan &amp; Grow Smarter</span>
+            </div>
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">🎧</div>
+            <div class="hero-feature-text">
+              <strong>24/7 Support</strong>
+              <span>We're Always Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="envelope-wrap">
+          <div class="chat-bubble"><span></span><span></span><span></span></div>
+          <div class="envelope">@</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ MAIN CONTACT SECTION ═══════════ -->
+    <section class="main-section">
+      <div class="section-title">
+        <h2>Contact <span>Our Team</span></h2>
+        <p>
+          We'd love to hear from you. Fill out the form and our team will get
+          back to you shortly.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- FORM -->
+        <form id="form">
+          <div class="form-card">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <div class="phone-row">
+                <input type="text" name="country_code" placeholder="+91" />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter phone number"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                name="message"
+                placeholder="Leave a message here."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Services</label>
+              <div class="services-grid">
+                <label class="service-check">
+                  <input type="checkbox" name="servces[]" /> Designing
+                </label>
+                <label class="service-check">
+                  <input type="checkbox" name="servces[]" /> Web/App development
+                </label>
+                <label class="service-check">
+                  <input type="checkbox" name="servces[]" /> Digital Marketing
+                </label>
+                <label class="service-check">
+                  <input type="checkbox" name="servces[]" /> Other
+                </label>
+              </div>
+            </div>
+
+            <button class="btn-send" type="submit">
+              Send Message
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- SIDE CARDS -->
+        <div class="side-cards">
+          <!-- Connect with us -->
+          <div class="side-card">
+            <div class="side-card-header">
+              <div class="side-card-icon">💬</div>
+              <div>
+                <h3>Connect with us</h3>
+              </div>
+            </div>
+            <p>Speak to our friendly team</p>
+            <div class="social-links">
+              <a class="social-link" href="mailto:info@rkss.com">
+                <div class="social-icon icon-email">✉️</div>
+                Shoot us an email
+              </a>
+              <a class="social-link" href="#">
+                <div class="social-icon icon-linkedin">in</div>
+                Connect with us on LinkedIn
+              </a>
+              <a class="social-link" href="#">
+                <div class="social-icon icon-instagram">📷</div>
+                Follow our Instagram
+              </a>
+              <a class="social-link" href="#">
+                <div class="social-icon icon-x">𝕏</div>
+                Join the conversation on X
+              </a>
+            </div>
+          </div>
+
+          <!-- Call us -->
+          <div class="side-card call-card">
+            <div class="side-card-header">
+              <div class="side-card-icon">📞</div>
+              <h3>Call Us</h3>
+            </div>
+            <div class="call-number">+91-7404058832</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-badge">RS</div>
+            <span class="logo-name">RKSS</span>
+          </div>
+          <p>
+            <strong style="color: #fff; display: block; margin-bottom: 4px"
+              >RKSS CONSULTING SERVICES</strong
+            >
+            Turning Today's Decisions into Tomorrow's Success
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="ic">📞</span> Phone: +91 74040 58832
+          </div>
+          <div class="footer-contact-item">
+            <span class="ic">✉️</span> Email: info@rkss.com
+          </div>
+          <div class="footer-contact-item">
+            <span class="ic">📍</span> Location – New Delhi
+          </div>
+
+          <div style="margin-top: 22px">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Statements</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Quick Links</a></li>
+            <li><a href="#">Help and Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <button class="footer-social-btn" aria-label="Instagram">📷</button>
+          <button class="footer-social-btn" aria-label="X">𝕏</button>
+          <button class="footer-social-btn" aria-label="LinkedIn">in</button>
+        </div>
+        <p class="footer-copy">
+          Follow us &nbsp;|&nbsp; @2026 RKSS Consulting Services. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
